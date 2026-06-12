@@ -1,11 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ulalau</title>
+    <title>Feliz Aniversário!</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#ff6b6b,#ffb347);
+            overflow:hidden;
+        }
+
+        .card{
+            background:white;
+            width:700px;
+            max-width:90%;
+            padding:40px;
+            border-radius:20px;
+            text-align:center;
+            box-shadow:0 10px 30px rgba(0,0,0,0.3);
+            animation: aparecer 1.5s ease;
+        }
+
+        h1{
+            color:#ff4d4d;
+            font-size:3rem;
+            margin-bottom:20px;
+        }
+
+        h2{
+            color:#333;
+            margin-bottom:20px;
+        }
+
+        p{
+            color:#555;
+            font-size:1.2rem;
+            line-height:1.8;
+        }
+
+        .emoji{
+            font-size:3rem;
+            margin:20px 0;
+            animation: flutuar 2s infinite;
+        }
+
+        @keyframes aparecer{
+            from{
+                opacity:0;
+                transform:translateY(50px);
+            }
+            to{
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+
+        @keyframes flutuar{
+            0%,100%{
+                transform:translateY(0);
+            }
+            50%{
+                transform:translateY(-10px);
+            }
+        }
+
+        .assinatura{
+            margin-top:30px;
+            font-weight:bold;
+            color:#ff4d4d;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <div class="card">
+        <h1>🎉 Feliz Aniversário! 🎉</h1>
+
+        <h2>Para meu grande amigo João</h2>
+
+        <div class="emoji">🎂🎈🎁</div>
+
+        <p>
+            Hoje é um dia muito especial porque celebramos mais um ano da sua vida.
+            Quero agradecer por todos os momentos, risadas e amizades que compartilhamos.
+            Que você tenha muita saúde, felicidade, sucesso e que todos os seus sonhos se realizem.
+        </p>
+
+        <p>
+            Aproveite seu dia ao máximo, porque você merece tudo de melhor!
+        </p>
+
+        <div class="assinatura">
+            Com carinho,<br>
+            Pedro ❤️
+        </div>
+    </div>
+
 </body>
 </html>
