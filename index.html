@@ -3,110 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feliz Aniversário!</title>
-
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body{
-            height:100vh;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            background:linear-gradient(135deg,#ff6b6b,#ffb347);
-            overflow:hidden;
-        }
-
-        .card{
-            background:white;
-            width:700px;
-            max-width:90%;
-            padding:40px;
-            border-radius:20px;
-            text-align:center;
-            box-shadow:0 10px 30px rgba(0,0,0,0.3);
-            animation: aparecer 1.5s ease;
-        }
-
-        h1{
-            color:#ff4d4d;
-            font-size:3rem;
-            margin-bottom:20px;
-        }
-
-        h2{
-            color:#333;
-            margin-bottom:20px;
-        }
-
-        p{
-            color:#555;
-            font-size:1.2rem;
-            line-height:1.8;
-        }
-
-        .emoji{
-            font-size:3rem;
-            margin:20px 0;
-            animation: flutuar 2s infinite;
-        }
-
-        @keyframes aparecer{
-            from{
-                opacity:0;
-                transform:translateY(50px);
-            }
-            to{
-                opacity:1;
-                transform:translateY(0);
-            }
-        }
-
-        @keyframes flutuar{
-            0%,100%{
-                transform:translateY(0);
-            }
-            50%{
-                transform:translateY(-10px);
-            }
-        }
-
-        .assinatura{
-            margin-top:30px;
-            font-weight:bold;
-            color:#ff4d4d;
-        }
-    </style>
+    <title>Feliz Aniversário</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="card">
-        <h1>🎉 Feliz Aniversário! 🎉</h1>
+    <header>
+        <!-- ALTERE O NOME DO SITE AQUI -->
+        <h1>GUEGUEU</h1>
 
-        <h2>Para meu grande amigo João</h2>
+        <nav>
+            <a href="#mensagem">Mensagem</a>
+            <a href="#galeria">Álbum</a>
+        </nav>
+    </header>
 
-        <div class="emoji">🎂🎈🎁</div>
+    <section class="hero" id="mensagem">
+
+        <div class="estrela">★</div>
+
+        <h2>Feliz Aniversário, GUEU</h2>
 
         <p>
-            Hoje é um dia muito especial porque celebramos mais um ano da sua vida.
-            Quero agradecer por todos os momentos, risadas e amizades que compartilhamos.
-            Que você tenha muita saúde, felicidade, sucesso e que todos os seus sonhos se realizem.
+            Hoje celebro a vida de um homem extraordinário que se tornou meu irmão e meu exemplo de fé e esforço. <br>
+            TE AMO GUEGUEU
         </p>
 
-        <p>
-            Aproveite seu dia ao máximo, porque você merece tudo de melhor!
-        </p>
+        <!-- BOTÃO -->
+        <a href="#galeria" class="btn">
+            OÍA NOSSAS FOTOS
+        </a>
 
-        <div class="assinatura">
-            Com carinho,<br>
-            Pedro ❤️
+    </section>
+
+    <!-- ================= GALERIA ================= -->
+    <section class="galeria" id="galeria">
+
+        <div class="titulo-galeria">
+
+            <div>
+                <span>ÁLBUM</span>
+
+                <h2>Se liga nas memórias</h2>
+            </div>
+
+           
+            <p>
+                Um pouco das memorias que construímos juntos, cada foto conta uma história de amizade, fé e momentos inesquecíveis.
+            
+            </p>
+
         </div>
-    </div>
+
+        <div class="grid">
+
+
+            <div class="imagem">
+                <img src=".//fotos/foto 1.jpeg" alt="Imagem 1">
+            </div>
+
+            <div class="imagem">
+                <img src=".//fotos/foto 2.jpeg" alt="Imagem 2">
+            </div>
+
+            <div class="imagem">
+                <img src=".//fotos/foto 3.jpeg  " alt="Imagem 3">
+            </div>
+
+            <div class="imagem">
+                <img src=".//fotos/foto 4.jpeg" alt="Imagem 4">
+            </div>
+
+            <div class="imagem">
+                <img src=".//fotos/foto 5.jpeg  " alt="Imagem 5">
+            </div>
+
+            <div class="imagem">
+                <img src=".//fotos/foto 6.jpeg" alt="Imagem 6">
+            </div>
+
+            <div class="imagem">
+                <img src=".//fotos/foto 7.jpeg  " alt="Imagem 7">
+            </div>
+
+            <div class="imagem">
+                <img src=".//fotos/foto 8.jpeg" alt="Imagem 8">
+            </div>
+
+            <div class="imagem">
+                <img src=".//fotos/foto 9.jpeg  " alt="Imagem 9">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <h2>TE AMO</h2>
+
+        <p>
+            Criado com muito amor para celebrar a vida de um irmão incrível. Que este dia seja tão especial quanto você é para mim. Parabéns, GUEU! <br>
+            Com muito amor, Pêu Pimenta
+        </p>
+
+        <div class="links">
+            <a href="#">INÍCIO</a>
+
+        </div>
+
+        <div class="coracao">♡</div>
+
+    </footer>
 
 </body>
 </html>
